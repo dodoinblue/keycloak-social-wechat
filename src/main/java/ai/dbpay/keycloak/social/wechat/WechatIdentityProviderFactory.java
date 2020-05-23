@@ -25,4 +25,9 @@ public class WechatIdentityProviderFactory extends AbstractIdentityProviderFacto
     public String getId() {
         return PROVIDER_ID;
     }
+
+    @Override
+    public OAuth2IdentityProviderConfig createConfig() {
+        return new OAuth2IdentityProviderConfig();
+    }
 }
